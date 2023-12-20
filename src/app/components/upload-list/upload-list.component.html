@@ -1,0 +1,13 @@
+<!-- parent -->
+<div class="card">
+  <div class="card-header">List of Files</div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"
+        *ngFor="let file of fileUploads">
+      
+      <!-- <img src={{file.url}} width="200px"> -->
+      <app-upload-details [fileUpload]="file"></app-upload-details>
+      <app-moshe [image]="file.url"></app-moshe>
+    </li>
+  </ul>
+</div>
